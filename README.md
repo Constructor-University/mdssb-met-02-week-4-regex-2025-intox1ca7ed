@@ -49,7 +49,9 @@ Find a regular expression that will match a student number, based on the additio
 `Unless the way your regular expression works is obvious, please explain how it works, e.g. this here will match the character and that here makes sure it also works if there is no character in front of the number.`
 
 **Answer:** [Gg?]\d{8}
+
 [Gg?] - either G or g or no character
+
 \d{8} - any eight digits
 
 #### Question 3
@@ -60,7 +62,9 @@ Find a regular expression that will match a student number, based on the additio
 `Unless the way your regular expression works is obvious, please explain how it works.`
 
 **Answer:** [A-Za-z]\d{8}
+
 [A-Za-z] - to catch any lowercase or uppercase alphabet character
+
 \d{8} - to catch a number
 
 
@@ -74,12 +78,19 @@ Example: 0421 / 200 40, +49 421 200 40
 
 **Answer:** 
 +49 176 421 200 40
+
 0176 421 200 40
+
 +49-176-421-200-40
+
 0176-421-200-40
+
 42120040
+
 +4917642120040
+
 +49 421 200 40
+
 +4942120040
 
 #### Question 4b

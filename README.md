@@ -39,7 +39,7 @@ Find a regular expression that will match this kind of student number.
 `The numbers are (obviously) different for different students, so finding a regular expression that only matches this one student number is not enough. 
 Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** G\d{8}
 
 #### Question 2
 
@@ -48,7 +48,9 @@ Find a regular expression that will match a student number, based on the additio
  
 `Unless the way your regular expression works is obvious, please explain how it works, e.g. this here will match the character and that here makes sure it also works if there is no character in front of the number.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** [Gg?]\d{8}
+[Gg?] - either G or g or no character
+\d{8} - any eight digits
 
 #### Question 3
 
@@ -57,7 +59,10 @@ Find a regular expression that will match a student number, based on the additio
  
 `Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** [A-Za-z]\d{8}
+[A-Za-z] - to catch any lowercase or uppercase alphabet character
+\d{8} - to catch a number
+
 
 #### Question 4a
 
@@ -67,8 +72,15 @@ Example: 0421 / 200 40, +49 421 200 40
  
 `It's obvious, but just to spell it out: For this question, you should think about different ways of writing down a phone number. It's not about trying to come up with as many phone number as you can.`
 
-**Answer:** Replace this text with your answer.
-
+**Answer:** 
++49 176 421 200 40
+0176 421 200 40
++49-176-421-200-40
+0176-421-200-40
+42120040
++4917642120040
++49 421 200 40
++4942120040
 
 #### Question 4b
 
@@ -76,4 +88,5 @@ Find a regular expression that matches all of the different phone number formats
  
 `Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** 
+/\+?(?:49|0\d{3}|\d{8})([s-]?\d{2,4})*$/gm

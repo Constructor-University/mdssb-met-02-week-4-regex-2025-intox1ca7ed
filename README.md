@@ -100,4 +100,4 @@ Find a regular expression that matches all of the different phone number formats
 `Unless the way your regular expression works is obvious, please explain how it works.`
 
 **Answer:** 
-/\+?(?:49|0\d{3}|\d{8})([s-]?\d{2,4})*$/gm
+\+?(?:49|0\d{3}|\d{8})([s-]?\d{2,4})*$
